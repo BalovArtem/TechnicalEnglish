@@ -148,14 +148,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dictionary\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Articles\TextFile1.txt" />
     <Content Include="Articles\TextFile2.txt" />
     <Content Include="Articles\TextFile3.txt" />
     <Content Include="Articles\TextFile4.txt" />
+    <Content Include="Dictionary\Words.txt" />
+    <Content Include="Dictionary\WordsTranslated.txt" />
     <None Include="Connected Services\TranslatorService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
