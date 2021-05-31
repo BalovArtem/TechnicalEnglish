@@ -108,7 +108,8 @@ namespace TechEng_0._2
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.MinimumSize = new System.Drawing.Size(1918, 1038);
             this.Name = "Form7";
-            this.Text = "Form7";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Article";
             this.Load += new System.EventHandler(this.Form7_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

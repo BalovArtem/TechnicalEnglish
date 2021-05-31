@@ -102,7 +102,6 @@ namespace TechEng_0._2
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.panel3.Controls.Add(this.linkLabel2);
             this.panel3.Location = new System.Drawing.Point(12, 67);
             this.panel3.Name = "panel3";
