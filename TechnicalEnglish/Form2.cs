@@ -53,21 +53,21 @@ namespace TechEng_0._2
             Close();
         }
 
-        private void label1_Click(object sender, EventArgs e){OpenFormWithArtile(ArticleName1);}
-        private void label2_Click(object sender, EventArgs e){OpenFormWithArtile(ArticleName2);}
-        private void label3_Click(object sender, EventArgs e){OpenFormWithArtile(ArticleName3);}
-        private void label4_Click(object sender, EventArgs e){OpenFormWithArtile(ArticleName4);}
+        public void OpenFormWithArtile(string articleName)
+        {
+            Form7 MyForm7 = new Form7("Articles\\" + articleName);
+            MyForm7.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e) { OpenFormWithArtile(ArticleName1); }
+        private void label2_Click(object sender, EventArgs e) { OpenFormWithArtile(ArticleName2); }
+        private void label3_Click(object sender, EventArgs e) { OpenFormWithArtile(ArticleName3); }
+        private void label4_Click(object sender, EventArgs e) { OpenFormWithArtile(ArticleName4); }
 
         public string FindText(string articleName)
         {
             string Text = File.ReadAllText(Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.FullName.ToString(), "Articles\\" + articleName));
             return Text;
-        }
-
-        public void OpenFormWithArtile(string articleName)
-        {
-            Form7 MyForm7 = new Form7("Articles\\" + articleName);
-            MyForm7.ShowDialog();
         }
     }
 }

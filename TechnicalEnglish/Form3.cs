@@ -14,8 +14,14 @@ namespace TechEng_0._2
 {
     public partial class Form3 : Form
     {
-        string pathText = Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.FullName.ToString(), "Dictionary\\Words.txt");
-        string pathTranslatedText = Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.FullName.ToString(), "Dictionary\\WordsTranslated.txt");
+        string pathText = FindTxt("Words.txt");
+        string pathTranslatedText = FindTxt("WordsTranslated.txt");
+
+        public static string FindTxt(string TxtName)
+        {
+            string txt = Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.FullName.ToString(), "Dictionary\\" + TxtName);
+            return txt;
+        }
 
         public Form3()
         {
@@ -33,10 +39,7 @@ namespace TechEng_0._2
             Close();
         }
 
-        private void label4_Click(object sender, EventArgs e){}
-        private void Form3_Load(object sender, EventArgs e){}
-        private void textBox1_TextChanged(object sender, EventArgs e){}
-        private void button1_Click_1(object sender, EventArgs e)
+        private void AddWordToDictionary(object sender, EventArgs e)
         {
 
             if (textBox1.Text == "")
@@ -72,10 +75,14 @@ namespace TechEng_0._2
                 }
             }
         }
-
+        #region
+        private void label4_Click(object sender, EventArgs e) { }
+        private void Form3_Load(object sender, EventArgs e) { }
+        private void textBox1_TextChanged(object sender, EventArgs e) { }
         private void panel2_Paint(object sender, PaintEventArgs e){}
         private void panel1_Paint(object sender, PaintEventArgs e){}
         private void richTextBox1_TextChanged(object sender, EventArgs e){}
         private void richTextBox2_TextChanged(object sender, EventArgs e){}
+        #endregion
     }
 }

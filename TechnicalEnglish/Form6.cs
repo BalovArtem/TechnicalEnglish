@@ -69,9 +69,6 @@ namespace TechEng_0._2
             }
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e){}
-        private void textBox1_TextChanged_1(object sender, EventArgs e){}
-        private void checkBox1_CheckedChanged_1(object sender, EventArgs e){}
         private void button1_Click_1(object sender, EventArgs e)
         {
             if (textBox1.Text.Length < 5)
@@ -110,6 +107,11 @@ namespace TechEng_0._2
                 Close();
             }
         }
+        #region
         private void Form6_Load(object sender, EventArgs e){}
+        private void checkBox1_CheckedChanged(object sender, EventArgs e) { }
+        private void textBox1_TextChanged_1(object sender, EventArgs e) { }
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e) { }
+        #endregion
     }
 }

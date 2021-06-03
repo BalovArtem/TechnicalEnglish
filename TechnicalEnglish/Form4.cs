@@ -33,7 +33,9 @@ namespace TechEng_0._2
             Close();
         }
 
+        #region
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e){}
         private void panel1_Paint(object sender, PaintEventArgs e){}
+        #endregion
     }
 }
