@@ -12,9 +12,9 @@ using DarrenLee.Translator;
 
 namespace TechEng_0._2
 {
-    public partial class Form7 : Form
+    public partial class Article : Form
     {
-        public Form7(string articleName)
+        public Article(string articleName)
         {
             InitializeComponent();
             label1.Text = File.ReadAllText(Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.FullName.ToString(), articleName));

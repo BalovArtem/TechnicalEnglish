@@ -102,7 +102,7 @@ namespace TechEng_0._2
                 }
 
                 Form6.ActiveForm.Hide();
-                Form2 MyForm2 = new Form2();
+                MainMenu MyForm2 = new MainMenu();
                 MyForm2.ShowDialog();
                 Close();
             }

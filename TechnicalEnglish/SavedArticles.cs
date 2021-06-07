@@ -10,25 +10,25 @@ using System.Windows.Forms;
 
 namespace TechEng_0._2
 {
-    public partial class Form4 : Form
+    public partial class SavedArticles : Form
     {
-        public Form4()
+        public SavedArticles()
         {
             InitializeComponent();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form4.ActiveForm.Hide();
-            Form2 MyForm2 = new Form2();
+            SavedArticles.ActiveForm.Hide();
+            MainMenu MyForm2 = new MainMenu();
             MyForm2.ShowDialog();
             Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form4.ActiveForm.Hide();
-            Form3 MyForm3 = new Form3();
+            SavedArticles.ActiveForm.Hide();
+            Dictionary MyForm3 = new Dictionary();
             MyForm3.ShowDialog();
             Close();
         }

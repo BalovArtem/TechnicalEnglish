@@ -1,7 +1,7 @@
 ﻿
 namespace TechEng_0._2
 {
-    partial class Form4
+    partial class SavedArticles
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace TechEng_0._2
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SavedArticles));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();

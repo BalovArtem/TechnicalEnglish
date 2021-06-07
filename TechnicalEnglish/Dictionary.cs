@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace TechEng_0._2
 {
-    public partial class Form3 : Form
+    public partial class Dictionary : Form
     {
         string pathText = FindTxt("Words.txt");
         string pathTranslatedText = FindTxt("WordsTranslated.txt");
@@ -23,7 +23,7 @@ namespace TechEng_0._2
             return txt;
         }
 
-        public Form3()
+        public Dictionary()
         {
             InitializeComponent();
 
@@ -33,8 +33,8 @@ namespace TechEng_0._2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3.ActiveForm.Hide();
-            Form2 MyForm2 = new Form2();
+            Dictionary.ActiveForm.Hide();
+            MainMenu MyForm2 = new MainMenu();
             MyForm2.ShowDialog();
             Close();
         }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace TechEng_0._2
 {
-    public partial class Form2 : Form
+    public partial class MainMenu : Form
     {
         string ArticleName1 = "TextFile1.txt";
         string ArticleName2 = "TextFile2.txt";
@@ -19,7 +19,7 @@ namespace TechEng_0._2
         string ArticleName4 = "TextFile4.txt";
 
 
-        public Form2()
+        public MainMenu()
         {
             InitializeComponent();
 
@@ -31,31 +31,31 @@ namespace TechEng_0._2
 
         private void Dictionary(object sender, EventArgs e)
         {
-            Form2.ActiveForm.Hide();
-            Form3 MyForm3 = new Form3();
+            MainMenu.ActiveForm.Hide();
+            Dictionary MyForm3 = new Dictionary();
             MyForm3.ShowDialog();
             Close();
         }
 
         private void Articles(object sender, EventArgs e)
         {
-            Form2.ActiveForm.Hide();
-            Form4 MyForm4 = new Form4();
+            MainMenu.ActiveForm.Hide();
+            SavedArticles MyForm4 = new SavedArticles();
             MyForm4.ShowDialog();
             Close();
         }
 
         private void MyAccount(object sender, EventArgs e)
         {
-            Form2.ActiveForm.Hide();
-            Form5 MyForm5 = new Form5();
+            MainMenu.ActiveForm.Hide();
+            MyAccount MyForm5 = new MyAccount();
             MyForm5.ShowDialog();
             Close();
         }
 
         public void OpenFormWithArtile(string articleName)
         {
-            Form7 MyForm7 = new Form7("Articles\\" + articleName);
+            Article MyForm7 = new Article("Articles\\" + articleName);
             MyForm7.ShowDialog();
         }
 

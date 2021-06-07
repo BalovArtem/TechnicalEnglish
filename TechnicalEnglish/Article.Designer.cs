@@ -1,7 +1,7 @@
 ﻿
 namespace TechEng_0._2
 {
-    partial class Form7
+    partial class Article
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace TechEng_0._2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Article));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -105,6 +106,7 @@ namespace TechEng_0._2
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.MinimumSize = new System.Drawing.Size(1918, 1038);
             this.Name = "Form7";

@@ -1,7 +1,7 @@
 ﻿
 namespace TechEng_0._2
 {
-    partial class Form3
+    partial class Dictionary
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace TechEng_0._2
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dictionary));
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
